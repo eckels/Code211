@@ -9,11 +9,10 @@ body {
 }
 
 header {
-background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(to top, #5B3ADC 0%, #305AED 100%);
   width: 100%;
   text-align: center;
-  padding: 50px 0 80px 0;
+  padding: 50px 0 100px 0;
 }
 
 .center {
@@ -26,9 +25,256 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .center h2 {
-  margin: 20px 0 0 0;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 2em;
+  margin: 10px 0 0 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1.8em;
   color: white;
+  text-transform: uppercase;
+}
+
+.center h5 {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  font-size: 1.4em;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.shuffle-wrap {
+  text-align: center;
+}
+
+.shuffle {
+  padding: 25px 35px 25px 35px;
+  background-color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
+  margin-top: -51px;
+  border-radius: 7px;
+}
+
+.encompass {
+  display: inline-block;
+  margin: 0;
+  margin-right: 40px;
+  font-weight: 500;
+  color: black;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.super {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 1px;
+}
+
+.sub {
+  margin: 0;
+  color: #2a2a2a;
+}
+
+.shuffle a {
+
+}
+
+.shuffle button {
+  font-weight: 500;
+  display: inline-block;
+  color: #5B3ADC;
+  cursor: pointer;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: solid #5B3ADC 2px;
+  padding: 10px 25px 10px 25px;
+  transition: all .3s;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.shuffle button:hover {
+  color: white;
+  background-color: #5B3ADC;
+}
+
+#about {
+  max-width: 950px;
+  margin: 60px auto 50px auto;
+}
+
+#about h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#about hr {
+  margin: 0;
+  border: none;
+  border-top: solid #5B3ADC 3px;
+  width: 100px;
+}
+
+#about .desc {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 1.05em;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#definition {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  box-shadow: 0 5px 18px 0 rgba(0,0,0,0.3);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  transition: all .3s;
+  position: relative;
+}
+
+#definition:hover {
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: 70px;
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.3);
+}
+
+#definition h3 {
+  color: #2a2a2a;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+#definition .pro {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#definition .small {
+  margin: 0;
+  color: #5B3ADC;
+  margin-bottom: -3px;
+  text-transform: uppercase;
+  font-size: .95em;
+  letter-spacing: 1px;
+}
+
+#definition .def {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#schedule {
+  max-width: 950px;
+  margin: 30px auto 30px auto;
+}
+
+#schedule h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#schedule hr {
+  margin: 0;
+  border: none;
+  border-top: solid #5B3ADC 3px;
+  width: 100px;
+}
+
+.sched-wrap {
+  max-width: 950px;
+  margin: 15px auto 30px auto;
+}
+
+.sched-tabs {
+
+}
+
+.sched-tabs p {
+  margin: 0;
+  display: inline-block;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 1.2em;
+  background-color: #F7F7F7;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -1px 10px 0 rgba(0,0,0,0.3);
+  transition: all .3s;
+}
+
+.sched-tabs .active {
+  color: white;
+  background-color: #5B3ADC;
+  box-shadow: none;
+}
+
+.sched-grid {
+  background-image: linear-gradient(to top, #305AED 0%, #5B3ADC 100%);
+  border-radius: 0 8px 8px 8px;
+  padding: 35px;
+  padding-top: 25px;
+}
+
+#day1, #day2 {
+  width: 100%;
+}
+
+.table-row {
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  margin-top: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
+  transition: all .3s;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.table-row:hover {
+  top: -3px;
+  left: -2%;
+  width: 104%;
+}
+
+.table-row p {
+  margin: 0;
+  width: 33%;
+  width: calc(33% - 15px);
+  padding: 20px 0 20px 15px;
+  display: inline-block;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+.showntable {
+  display: block;
+  transition: all .3s;
+}
+
+.hiddentable {
+  display: none;
+  transition: all .3s;
 }
