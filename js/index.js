@@ -1,6 +1,18 @@
 $(document).ready(function() {
+  /*var windowWidth = $(window).width;
+  console.log(windowWidth);
+  if (windowWidth > 580) {
+    var cardHeight = $('#target').height();
+    cardHeight = cardHeight + 'px';
+    console.log(cardHeight);
+    var i = 0;
+    while (i < 10) {
+      document.getElementsByClassName('faq-item').item(i).style.height = cardHeight;
+      i++
+    }
+  }*/
+
   $('#tab1').click(function() {
-    console.log('works');
     $('#tab1').addClass('active');
     $('#tab2').removeClass('active');
     $('#day1').addClass('showntable');

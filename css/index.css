@@ -2,6 +2,13 @@ html {
 
 }
 
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +38,8 @@ header {
   font-size: 1.8em;
   color: white;
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .center h5 {
@@ -40,6 +49,8 @@ header {
   font-size: 1.4em;
   margin: 0;
   margin-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .shuffle-wrap {
@@ -53,7 +64,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
-  margin-top: -51px;
+  margin-top: -52px;
   border-radius: 7px;
 }
 
@@ -89,10 +100,10 @@ header {
   display: inline-block;
   color: #5B3ADC;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: transparent;
   border: solid #5B3ADC 2px;
-  padding: 10px 25px 10px 25px;
+  padding: 11px 28px 11px 28px;
   transition: all .3s;
   border-radius: 5px;
   vertical-align: top;
@@ -103,9 +114,55 @@ header {
   background-color: #5B3ADC;
 }
 
+@media (max-width: 625px) {
+  .shuffle button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .shuffle {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .shuffle .encompass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .super {
+    font-size: 1em;
+  }
+
+  .sub {
+    font-size: 1.2em;
+  }
+
+  .shuffle button {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+}
+
 #about {
-  max-width: 950px;
+  max-width: 880px;
   margin: 60px auto 50px auto;
+  padding: 0 35px 0 35px;
+}
+
+@media (max-width: 480px) {
+  #about {
+    margin-top: 45px;
+  }
 }
 
 #about h3 {
@@ -130,6 +187,11 @@ header {
   font-size: 1.05em;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.definition-wrap {
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 #definition {
@@ -190,6 +252,7 @@ header {
   color: #2a2a2a;
   margin: 0;
   margin-top: 10px;
+  margin-left: 35px;
 }
 
 #schedule hr {
@@ -197,11 +260,14 @@ header {
   border: none;
   border-top: solid #5B3ADC 3px;
   width: 100px;
+  margin-left: 35px;
 }
 
 .sched-wrap {
   max-width: 950px;
-  margin: 15px auto 30px auto;
+  margin: 20px auto 30px auto;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .sched-tabs {
@@ -215,7 +281,7 @@ header {
   font-weight: 500;
   font-size: 1.2em;
   background-color: #F7F7F7;
-  padding: 15px 35px 15px 35px;
+  padding: 15px 45px 15px 45px;
   cursor: pointer;
   border-radius: 8px 8px 0 0;
   box-shadow: 0 -1px 10px 0 rgba(0,0,0,0.3);
@@ -231,8 +297,8 @@ header {
 .sched-grid {
   background-image: linear-gradient(to top, #305AED 0%, #5B3ADC 100%);
   border-radius: 0 8px 8px 8px;
-  padding: 35px;
-  padding-top: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  padding: 35px 35px 40px 35px;
 }
 
 #day1, #day2 {
@@ -260,9 +326,8 @@ header {
 
 .table-row p {
   margin: 0;
-  width: 33%;
-  width: calc(33% - 15px);
-  padding: 20px 0 20px 15px;
+  width: calc(33% - 25px);
+  padding: 20px 0 20px 25px;
   display: inline-block;
   color: #2a2a2a;
   font-weight: 500;
@@ -277,4 +342,202 @@ header {
 .hiddentable {
   display: none;
   transition: all .3s;
+}
+
+@media (max-width: 940px) {
+  .table-row p {
+    width: calc(30% - 25px);
+    padding: 20px 0 20px 25px;
+  }
+}
+
+@media (max-width: 730px) {
+  .sched-wrap {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #schedule h3 {
+    margin-left: 15px;
+  }
+  #schedule hr {
+  margin-left: 15px;
+  }
+  .sched-grid {
+    padding: 25px 25px 30px 25px;
+  }
+}
+
+@media (max-width: 620px) {
+  .sched-grid {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .sched-wrap {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  #schedule h3 {
+    margin-left: 12px;
+  }
+  #schedule hr {
+  margin-left: 12px;
+  }
+  .sched-grid {
+    padding: 15px;
+  }
+  .table-row p {
+    font-size: 1.05em;
+    width: calc(30% - 15px);
+    padding: 20px 0 20px 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sched-wrap {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sched-grid {
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+  }
+  .table-row p {
+    font-size: 1em;
+    width: calc(30% - 12px);
+    padding: 20px 0 20px 12px;
+  }
+
+  .sched-tabs p {
+    margin: 0;
+    float: left;
+    font-size: 1.05em;
+    padding: 15px 0 15px 0;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+#faq {
+  max-width: 950px;
+  margin: 60px auto 30px auto;
+}
+
+#faq h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+#faq hr {
+  margin: 0;
+  border: none;
+  border-top: solid #5B3ADC 3px;
+  width: 100px;
+  margin-left: 35px;
+}
+
+#faq .faq-desc {
+  margin: 0;
+  margin-left: 35px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 25px;
+}
+
+.faq-grid-wrap {
+  max-width: 950px;
+  margin: 30px auto 30px auto;
+  padding: 0 15px 0 15px;
+}
+
+.faq-grid {
+  width: 100%;
+}
+
+.faq-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 41%;
+  margin: 1.5%;
+  padding: 2.5%;
+  padding-top: 1.5%;
+  padding-bottom: 3%;
+  background-color: white;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.15);
+  border-top: solid #5B3ADC 3px;
+  border-radius: 0 0 8px 8px;
+}
+
+.faq-item h6 {
+  margin: 0;
+  font-size: 1.6em;
+  margin-bottom: 6px;
+  color: #2a2a2a;
+}
+
+.faq-item p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 125%;
+  font-size: 1.05em;
+}
+
+.faq-contact {
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+  padding: 0 35px 0 35px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  line-height: 130%;
+}
+
+#faq a {
+  text-decoration: none;
+  color: #5B3ADC;
+}
+
+@media (max-width: 700px) {
+  .faq-item {
+    margin: 0;
+    margin-bottom: 25px;
+    display: block;
+    width: 90%;
+    padding: 5%;
+    padding-top: 4.5%;
+    padding-bottom: 5.5%;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.15);
+  }
+  .faq-grid-wrap {
+    padding: 0 35px 0 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-grid-wrap {
+    padding: 0 20px 0 20px;
+  }
+  #faq h3 {
+    margin-left: 20px;
+  }
+  #faq hr {
+    margin-left: 20px;
+  }
+  #faq .faq-desc {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .faq-grid-wrap {
+    padding: 0 12px 0 12px;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
 }
