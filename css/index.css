@@ -421,7 +421,7 @@ header {
 
 #faq {
   max-width: 950px;
-  margin: 60px auto 30px auto;
+  margin: 60px auto 40px auto;
 }
 
 #faq h3 {
@@ -543,5 +543,173 @@ header {
 }
 
 #reps {
+  background-image: linear-gradient(to top, #305AED 0%, #5B3ADC 100%);
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
+.rep-wrap {
+  max-width: 950px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#reps hr {
+  margin: 0;
+  border: none;
+  border-top: solid white 3px;
+  width: 100px;
+  margin-left: 35px;
+}
+
+#reps h3 {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.rep-desc {
+  margin: 0;
+  text-align: left;
+  margin-left: 35px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 25px;
+  margin-bottom: 35px;
+}
+
+.rep-block {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px 15px 20px 15px;
+  height: 109px;
+  margin-right: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: left;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3);
+}
+
+.rep-block img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-top: 5px;
+}
+
+.rep-text {
+  float: left;
+  margin-left: 20px;
+}
+
+.rep-text h4 {
+  color: #2a2a2a;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.rep-text p {
+  margin: 0;
+  color: black;
+}
+
+.rep-text a {
+  margin: 0;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.rep-text .second {
+  margin-top: 8px;
+}
+
+@media (max-width: 930px) {
+  .rep-block {
+    height: auto;
+    width: auto;
+    text-align: center;
+    width: 300px;
+  }
+
+  .rep-block img {
+    float: none;
+    margin: 0 auto 8px auto;
+  }
+
+  .rep-text {
+    float: none;
+    text-align: left;
+  }
+
+  .rep-text h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .rep-block {
+    height: auto;
+    text-align: center;
+    width: 90%;
+    padding: 3% 2% 3% 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .rep-block img {
+    float: left;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .rep-text {
+    float: left;
+    text-align: left;
+  }
+
+  .rep-text h4 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .rep-block {
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 450px) {
+  .rep-block {
+    height: auto;
+    text-align: center;
+    padding: 2%;
+    width: 90%;
+  }
+
+  .rep-block img {
+    float: none;
+    margin: 8px auto 8px auto;
+    height: 80px;
+    width: 80px;
+  }
+
+  .rep-text {
+    float: none;
+    text-align: left;
+  }
+
+  .rep-text h4 {
+    text-align: center;
+  }
 }
