@@ -23,9 +23,9 @@
     <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#5B3ADC">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="aos/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="aos/aos.css" />
     <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
     <title>Code211</title>
   </head>
@@ -277,6 +277,7 @@
       AOS.init({
         once: true
       });
+      window.addEventListener('load', AOS.refresh);
     </script>
 
   </body>
