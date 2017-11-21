@@ -32,18 +32,18 @@ $(document).ready(function() {
 
   var capsule2 = $('.rep-block').length;
   var ii = 0;
-  var delayCounter2 = 0;
-  while (ii < capsule2) {
-    document.getElementsByClassName('rep-block')[ii].setAttribute("data-aos-delay", delayCounter2);
-    ii++
-    if (ii % 2 == 0 && $(window).width() >= 750) {
+  var delayCounter2 = 250;
+    /*if (ii % 2 == 0 && $(window).width() >= 750) {
       delayCounter2 = 0;
-    }
+      console.log('memememememe');
+    }*/
     if ($(window).width() <= 750) {
       delayCounter2 = 0;
+      while (ii < capsule2) {
+        document.getElementsByClassName('rep-block')[ii].setAttribute("data-aos-delay", delayCounter2);
+        ii++;
+      }
     }
-    delayCounter2 = delayCounter2 + 250;
-  }
 
   $('#tab1').click(function() {
     $('#tab1').addClass('active');
