@@ -11,6 +11,8 @@
   display: block;
   border-radius: 6px;
   transition: .3s;
+  animation-name: large;
+  animation-duration: 1s;
 }
 
 #popup img {
@@ -43,6 +45,16 @@
   font-weight: bold;
 }
 
+@keyframes large {
+  from {right: -400px;}
+  to {right: 3%;}
+}
+
+@keyframes small {
+  from {bottom: -400px;}
+  to {bottom: 5%;}
+}
+
 @media (max-width: 1000px) {
 #popup {
   width: 86%;
@@ -52,9 +64,6 @@
   bottom: 5%;
   right: 4%;
   left: 4%;
-}
-
-#popup img {
-
+  animation-name: small;
 }
 }
