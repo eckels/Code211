@@ -420,6 +420,15 @@ header {
   }
 }
 
+#people {
+  max-width: 950px;
+  margin: 60px auto 40px auto;
+}
+
+.people-div {
+
+}
+
 #faq {
   max-width: 950px;
   margin: 60px auto 40px auto;

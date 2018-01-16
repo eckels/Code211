@@ -11,6 +11,7 @@ $(document).ready(function() {
       i++
     }
   }*/
+    $('.smooth').smoothScroll();
   if ($(window).width() <= 480) {
     document.getElementById('shuffle').removeAttribute("data-aos");
   }
