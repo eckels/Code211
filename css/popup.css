@@ -56,14 +56,14 @@
 }
 
 @media (max-width: 1000px) {
-#popup {
-  width: 86%;
-  padding: 3%;
-  height: auto;
-  top: auto;
-  bottom: 5%;
-  right: 4%;
-  left: 4%;
-  animation-name: small;
-}
+  #popup {
+    width: 86%;
+    padding: 3%;
+    height: auto;
+    top: auto;
+    bottom: 5%;
+    right: 4%;
+    left: 4%;
+    animation-name: small;
+  }
 }

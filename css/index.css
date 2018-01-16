@@ -420,13 +420,93 @@ header {
   }
 }
 
+/* People Div */
+
 #people {
   max-width: 950px;
   margin: 60px auto 40px auto;
 }
 
-.people-div {
+#people h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 35px;
+}
 
+#people hr {
+  margin: 0;
+  border: none;
+  border-top: solid #5B3ADC 3px;
+  width: 100px;
+  margin-left: 35px;
+}
+
+.people-div {
+  text-align: center;
+}
+
+.person {
+  width: 294px;
+  background-color: white;
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  vertical-align: top;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,0.35);
+  border-radius: 8px;
+  position: relative;
+  top: 0;
+  transition: all .3s;
+}
+
+.person img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+
+.person h4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  font-size: 1.5em;
+  margin: 10px auto 0px auto;
+  color: #2a2a2a;
+}
+
+.person .desc {
+  padding-left: 15px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: .85em;
+  margin-bottom: 8px;
+}
+
+.person .position {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.person:hover {
+  box-shadow: 0 3px 30px 0 rgba(0,0,0,0.35);
+  top: -10px;
+}
+
+@media (max-width: 400px) {
+  #people h3 {
+    margin-left: 20px;
+  }
+  #people hr {
+    margin-left: 20px;
+  }
 }
 
 #faq {
