@@ -246,6 +246,10 @@ header {
   margin: 30px auto 30px auto;
 }
 
+#schedule a {
+  color: #5B3ADC;
+}
+
 #schedule h3 {
   font-size: 2em;
   font-weight: 700;
@@ -418,6 +422,35 @@ header {
     width: 50%;
     text-align: center;
   }
+}
+
+/* Button */
+
+.button-a {
+  text-decoration: none;
+}
+
+.button {
+  margin: 50px auto 50px auto;
+  text-align: center;
+}
+
+.button img {
+  width: 90px;
+}
+
+.button h5 {
+  font-size: 1.6em;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 12px;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+
+.button p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* People Div */
